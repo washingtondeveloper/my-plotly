@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Potly</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+	<p id="tester" style="width: 1000px;height: 600px;"></p>
+
+	<script type="text/javascript">
+		var produto1 = {
+			x: [2, 3, 4, 5],
+			y: [12, 9, 15, 12],
+			mode: 'lines+markers',
+			name: 'Produto 1',
+			marker: {
+				color: 'rgb(128, 0, 128)',
+				size: 30
+			},
+			line: {
+				color: 'rgb(128, 0, 128)',
+				width: 8 
+			}
+		};
+
+		var produto2 = {
+			x: [2, 3, 4, 5],
+			y: [12, 9, 15, 12],
+			mode: 'lines+markers',
+			name: 'Produto 2',
+			marker: {
+				color: 'red',
+				size: 20
+			},
+			line: {
+				color: 'red',
+				width: 5 
+			}
+		};
+
+		var produto3 = {
+			x: [2, 3, 4, 5],
+			y: [12, 9, 15, 12],
+			mode: 'lines+markers',
+			name: 'Produto 3',
+			marker: {
+				color: 'green',
+				size: 10
+			},
+			line: {
+				color: 'green',
+				width: 2 
+			}
+		};
+
+		var data = [produto1, produto2, produto3]
+		var layout = {
+			title: 'Meu teste para Duxus'
+		}
+
+		Plotly.newPlot('tester', data, layout)
+	</script>
+</body>
+</html>
